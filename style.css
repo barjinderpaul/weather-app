@@ -1,0 +1,136 @@
+body {
+    height: 100vh;
+}
+body {
+    min-height: 100vh;
+}
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(26, 58, 126);
+}
+
+.container h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.container button {
+    background-color: inherit;
+    border-radius: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: rgb(26, 58, 126);
+    color: white;
+}
+
+.weather-div {
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: white;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 1rem;
+    /* justify-content: center; */
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    width: 50%;
+    height: 80%;
+    margin-bottom: 1rem;
+}
+
+.weather-div label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.weather-div input {
+    width: 80%;
+    margin: 1rem;
+}
+
+.set-weather {
+    display: none;
+    visibility: hidden;
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: column wrap;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 0.5rem;
+}
+
+.icon-name {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-bottom: 1px solid black;
+}
+
+.weather-data {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-name span {
+    padding: 1rem;
+}
+
+.temperature {
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+}
+.city-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0;
+}
+
+.weather {
+    font-size: 1.5rem;
+}
+
+#wicon {
+    width: 7rem;
+    height: 7rem;
+    border: 1px solid black;
+    border-radius: 5rem;
+    background-color: bisque;
+}
+
+@media screen and (max-width:600px ){
+    .container {
+        text-align: center;
+    }
+    .container h1 {
+        font-size: 2rem;
+    }
+    .weather-div {
+        width: 80%;
+    }
+    .set-weather {
+        width: 80%;
+    }
+
+    #wicon {
+        width: 4rem;
+        height: 4rem;
+    }
+    .temperature {
+        font-size: 1.5rem;
+    }
+}
