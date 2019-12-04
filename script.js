@@ -3,7 +3,7 @@ $(document).ready(()=> {
         let city = $('#city').val()
         if(city !== '') {
             $.ajax({
-                url: 'http://api.openweathermap.org/data/2.5/weather?q='+city+"&units=metric"+"&appid=1e8d88f075cb1cf9670c77d2ecdcab13",
+                url: 'https://api.openweathermap.org/data/2.5/weather?q='+city+"&units=metric"+"&appid=1e8d88f075cb1cf9670c77d2ecdcab13",
                 type: "GET",
                 dataType : "jsonp",
                 success : (data) => {
